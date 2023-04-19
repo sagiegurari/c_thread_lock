@@ -11,8 +11,8 @@ struct ThreadLockOptions
   int wait_timeout_in_milliseconds;
 };
 
-struct ThreadLockOptions threadlock_new_default_options();
-struct ThreadLock        *threadlock_new();
+struct ThreadLockOptions threadlock_new_default_options(void);
+struct ThreadLock        *threadlock_new(void);
 struct ThreadLock        *threadlock_new_with_options(struct ThreadLockOptions);
 void threadlock_release(struct ThreadLock *);
 bool threadlock_lock(struct ThreadLock *);
