@@ -7,7 +7,7 @@ static void test_impl()
 {
   struct ThreadLockOptions options = threadlock_new_default_options();
 
-  options.wait_timeout_in_milliseconds = 2000;
+  options.wait_timeout_in_milliseconds = 3000;
   struct ThreadLock *lock = threadlock_new_with_options(options);
 
   time_t            start     = time(NULL);
