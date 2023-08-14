@@ -9,7 +9,7 @@ struct ThreadLock
   pthread_cond_t  signal;
 };
 
-struct ThreadLockOptions threadlock_new_default_options()
+struct ThreadLockOptions threadlock_new_default_options(void)
 {
   struct ThreadLockOptions options =
   {
@@ -19,7 +19,7 @@ struct ThreadLockOptions threadlock_new_default_options()
   return(options);
 }
 
-struct ThreadLock *threadlock_new()
+struct ThreadLock *threadlock_new(void)
 {
   struct ThreadLockOptions options = threadlock_new_default_options();
 
