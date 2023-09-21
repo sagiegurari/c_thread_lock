@@ -1,4 +1,4 @@
-# Thread Pool
+# Thread Lock
 
 [![CI](https://github.com/sagiegurari/c_thread_lock/workflows/CI/badge.svg?branch=master)](https://github.com/sagiegurari/c_thread_lock/actions)
 [![Release](https://img.shields.io/github/v/release/sagiegurari/c_thread_lock)](https://github.com/sagiegurari/c_thread_lock/releases)
